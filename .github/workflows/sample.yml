@@ -1,0 +1,17 @@
+name: Sample
+
+on: [push]
+
+jobs:
+  run-shell-cmd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo string
+        run: echo "Hello JM"
+      
+      - name : multiline
+        run: |
+          npm -version
+          node -version
+
+
